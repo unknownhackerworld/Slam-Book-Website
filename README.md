@@ -3,9 +3,9 @@
 <!--ABOUT ME-->
 ````
 
-# Hi This is me!! Unknown hacker
+# Hi This is me!! Unknown hacker here
 
-**Never** come in search of me. I will not be there for you. If You need anything just comment it. I am **Black Hat :tophat:** who dont like to H*ck for good things  . First of all Welcome to my GitHub page. Never Ever search For Me. If you want to know my name, then Just decrypt this
+**Never** come in search of me. I'll not be there for you. If You need anything just comment it. I am **Black Hat :tophat:** who dont like to H*ck for good things  . First of all Welcome to my GitHub page. Never Ever search For Me. If you want to know my name, then Just decrypt this
 **BMMFO KPTFQI** ....... I cant give you a clue....You should search for it here.
 
 
