@@ -16,7 +16,7 @@
 
 But I think its not fair not to give a clue....... First sentence gives you the clue and second sentence says what to do. Read the sentence again and **GOTCHA!!!** you got the answer.
 
-DM me on [Instagram](www.instagram.com/tamizhan.ml) for anything!!!
+DM me on (www.instagram.com/tamizhan.ml) for anything!!!
 
 **H4CK1NG this World for Fun!!!**
                                      -- **Unknown ~~guy~~ Hacker :male_detective::male_detective:**
@@ -36,5 +36,5 @@ DM me on [Instagram](www.instagram.com/tamizhan.ml) for anything!!!
 #### **This website contains parallax.css  where  it contains an attractive parallax background for the website.**
 
 #### **Hope you would like the website.**
-#### **Demo link - [SLAM BOOK](www.2020slambook.epizy.com)**
+#### **Demo link - (www.2020slambook.epizy.com)**
 
