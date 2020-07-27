@@ -24,34 +24,6 @@
 	<div id='title1'> </div>
 	<div id='stars'></div>
 	
-	<script>
-		ar audio, playbtn, mutebtn, seek_bar;
-
-		function initAudioPlayer() {
-			audio = new Audio();
-			audio.src = "Friendship-Anthem-MassTamilan.io.mp3";
-			audio.loop = true;
-			audio.play();
-			// Set object references
-			playbtn = document.getElementById("playpausebtn");
-			mutebtn = document.getElementById("mutebtn");
-			// Add Event Handling
-			playbtn.addEventListener("click", playPause);
-			mutebtn.addEventListener("click", mute);
-			// Functions
-			function playPause() {
-				if (audio.paused) {
-					audio.play();
-					playbtn.style.background = "url(pause.png) no-repeat";
-				}
-				else {
-					audio.pause();
-					playbtn.style.background = "url(play.png) no-repeat";
-				}
-			}
-		}
-		window.addEventListener("load", initAudioPlayer);
-	</script>
 	
 </head>
 
@@ -305,7 +277,7 @@
 								<div class="card-body mt-3"> </div>
 							</div>
 						</div>
-						<div id="parallaxContainer" data-image="collage.jpeg"> </div>
+						
 					</div>
 					<!---->
 					<!--Q12-->
@@ -450,7 +422,6 @@
 								<div class="card-body mt-3"> </div>
 							</div>
 						</div>
-						<div id="parallaxContainer1" data-image="Group.jpeg"> </div>
 					</div>
 					<!---->
 					<!--Q19-->
