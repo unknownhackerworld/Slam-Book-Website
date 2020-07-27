@@ -14,7 +14,7 @@
 > *Hackers **Decrypt** Encryted text to crack this World*
 
 
-But I think its not fair not to give a clue.;.....Read the sentence again and you got  the clue
+But I think its not fair not to give a clue.;..... One sentence contains One clue. First sentence gives you the clue and second sentence says what to do. Read the sentence again and **GOTCHA!!!** you got the clue.
 
 DM me on [Instagram](www.instagram.com/tamizhan.ml) for anything!!!
 
