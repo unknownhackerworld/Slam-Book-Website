@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!--ends here-->
+	<link rel="stylesheet" type="text/css" href="questions.css">
+	<link rel="stylesheet" type="text/css" href="parallax.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="mkParallax-master/src/jquery.mkParallax.js"></script>
+	<script src="mkParallax-master/src/jquery.mkParallax1.js"></script>
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<!--ends here-->
+	<title> My Slam Book </title>
+	<div id='title1'> </div>
+	<div id='stars'></div>
+	
+	<script>
+		ar audio, playbtn, mutebtn, seek_bar;
+
+		function initAudioPlayer() {
+			audio = new Audio();
+			audio.src = "Friendship-Anthem-MassTamilan.io.mp3";
+			audio.loop = true;
+			audio.play();
+			// Set object references
+			playbtn = document.getElementById("playpausebtn");
+			mutebtn = document.getElementById("mutebtn");
+			// Add Event Handling
+			playbtn.addEventListener("click", playPause);
+			mutebtn.addEventListener("click", mute);
+			// Functions
+			function playPause() {
+				if (audio.paused) {
+					audio.play();
+					playbtn.style.background = "url(pause.png) no-repeat";
+				}
+				else {
+					audio.pause();
+					playbtn.style.background = "url(play.png) no-repeat";
+				}
+			}
+		}
+		window.addEventListener("load", initAudioPlayer);
+	</script>
+	
+</head>
+
+<body class="body" id="body">
+	<button id="playpausebtn"></button>
+	
+	
+	<div id="title1">
+		<div class="header">
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</div>
+		<form action="slam.php" method="POST">
+			<div class="text">
+				<h2 class="title mt-4 "><center>All fields are<br>mandatory!!!</center></h2></div>
+			<!--Name -->
+			<center>
+				<div class="card" id="1">
+					<div class="card-body">
+						<div class="container mt-7 mb-5">
+							<div class="form-group">
+								<div class="text">
+									<div for="Name">
+										<div class="spam">NAME</div>
+									</div>
+								</div>
+								<input type="text" class="form-control1 mt-3" id="q1" placeholder="Enter your lovely name" name="q1" required> </div>
+							<div class="card-body mt-3"> </div>
+						</div>
+						<div class="swipe">
+							<div class="spam">Swipe Up</div>
+						</div>
+						<iframe src="https://giphy.com/embed/hve4AajHKkKWwnXcvN" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					</div>
+				</div>
+				<!---->
+				<!--DOB-->
+				<div class="card mt-5 mb-7 " id="2">
+					<div class="card-body mb-5 mt-8">
+						<div class="container2">
+							<div class="dob">
+								<div class="form-group">
+									<div class="text">
+										<div for="dob">
+											<center>
+												<div class="spam">First Cry on...</div>
+												<br>(DOB)</center>
+										</div>
+									</div>
+									<input type="date" style="font-size: 20px;" class="form-control mt-4" id="q2" name="q2" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+						<div class="mt-5">
+							<div class="swipe text mt-3 ml-2">
+								<div class="spam">Swipe Up</div>
+							</div>
+							<iframe src="https://giphy.com/embed/hve4AajHKkKWwnXcvN" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<!--Q3-->
+				<div class="card mt-5 mb-7" id="3">
+					<div class="card-body mb-8 mt-8">
+						<div class="container3 mb-7">
+							<div class="q3o">
+								<div class="form-group">
+									<div class="text">
+										<div class="q3">
+											<label for="q3" class="mt-3">
+												<div class="i ">
+													<div class="spam">Favourite Destination</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<input type="text" class="form-control mt-4" style="font-size: 20px;" id="q3" placeholder="Answer It" name="q3" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<!-- Q4 -->
+				<div class="card mt-5 " id="4">
+					<div id='stars2'></div>
+					<div class="card-body mb-8 mt-8">
+						<div class="container4 mb-7">
+							<div class="q4o">
+								<div class="form-group">
+									<div class="text">
+										<div class="q4">
+											<label for="q4" class="mt-3">
+												<div class="i ">
+													<div class="spam">Ambition</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<input type="text" style="font-size: 20px;" class="form-control mt-4" id="q4" placeholder="Given a choice" name="q4" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<!--Q5-->
+				<div class="card mt-5 mb-7" id="5">
+					<div class="card-body mb-8 mt-8">
+						<div class="container5 mb-7">
+							<div class="q5o">
+								<div class="form-group">
+									<div class="text">
+										<div class="q5">
+											<label for="q5" class="mt-3">
+												<div class="i">
+													<div class="spam">Hobby</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<input type="text" class="form-control mt-2" placeholder="Hobby" name="q5" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<!--Q6-->
+				<div class="card mt-5 mb-7" id="6">
+					<div class="card-body mb-8 mt-8">
+						<div class="container6 mb-7">
+							<div class="q6o">
+								<div class="form-group">
+									<div class="text">
+										<div class="q6">
+											<label for="q6" class="mt-3">
+												<div class="i ">
+													<div class="spam">Mobile No</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<input type="number" class="form-control mt-3" id="q6" placeholder="Mobile No" name="q6" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<!--Q7-->
+				<div class="card mt-5 mb-7" id="7">
+					<div class="card-body mb-8 mt-8">
+						<div class="container7 mb-7">
+							<div class="q7o">
+								<div class="form-group">
+									<div class="text">
+										<div class="q7" id="7">
+											<label for="q7" class="mt-3">
+												<div class="j ">
+													<div class="spam">Longest Desire</div>
+												</div>
+											</label>
+										</div>
+									</div>
+									<input type="text" class="form-control mt-3" id="q7" placeholder="Not yet happened" name="q7" required> </div>
+							</div>
+							<div class="card-body mt-3"> </div>
+						</div>
+					</div>
+					<!---->
+					<!--Q8-->
+					<div class="card mt-5 mb-7" id="8">
+						<div class="card-body mb-8 mt-8">
+							<div class="container8 mb-7">
+								<div class="q8o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q8">
+												<label for="q8" class="q8i mt-3">
+													<div class="spam">Which one of our classmate would you probably kill</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q8" placeholder="Dont Lie" name="q8" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q9-->
+					<div class="card mt-5 mb-7" id="9">
+						<div class="card-body mb-8 mt-8">
+							<div class="container9 mb-7">
+								<div class="q9o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q9">
+												<label for="q9" class="mt-3">
+													<div class="j">
+														<div class="spam">Your Celebrity Crush</div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-4" id="q9" placeholder="Dont be shy to say" name="q9" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q10-->
+					<div class="card mt-5 mb-7" id="10">
+						<div class="card-body mb-8 mt-8">
+							<div class="container10">
+								<div class="q10o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q10">
+												<label for="q10" class="q11i mt-3">
+													<div class="spam">Favourite teacher who had played a major role in your life</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q10" placeholder="Favourite Teacher" name="q10" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q11-->
+					<div class="card mt-5 mb-7" id="11">
+						<div class="card-body mb-8 mt-8">
+							<div class="container11">
+								<div class="q11o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q11">
+												<label for="q11" class="mt-3">
+													<div class="spam">Best Friend For Life</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q11" placeholder="Friend for Life" name="q11" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+						<div id="parallaxContainer" data-image="collage.jpeg"> </div>
+					</div>
+					<!---->
+					<!--Q12-->
+					<div class="card mt-5 mb-7" id="12">
+						<div class="card-body mb-8 mt-8">
+							<div class="container12">
+								<div class="q12o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q12">
+												<label for="q12" class="mt-3">
+													<div class="spam">Describe yourself in one word</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q12" placeholder="Be true to yourself" name="q12" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q13-->
+					<div class="card mt-5 mb-7" id="13">
+						<div class="card-body mb-8 mt-8">
+							<div class="container13">
+								<div class="q13o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q13">
+												<label for="q13" class="mt-3">
+													<div class="spam">Describe your
+														<br>school experience</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q13" placeholder="School Experience" name="q13" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q14-->
+					<div class="card mt-5 mb-7" id="14">
+						<div class="card-body mb-8 mt-8">
+							<div class="container14">
+								<div class="q14o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q14">
+												<label for="q14" class="q14i mt-3">
+													<div class="spam">What do most of your friends think about you which is totally untrue?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q14" placeholder="Think It And Say" name="q14" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q15-->
+					<div class="card mt-5 mb-7" id="15">
+						<div class="card-body mb-8 mt-8">
+							<div class="container15">
+								<div class="q15o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q15">
+												<label for="q15" class="mt-3">
+													<div class="spam q15i">If you could instantly change one aspect of your personality,what would it be?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-4" id="q15" placeholder="If you could instantly change one asp..." name="q15" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="parallax1" onscroll="myFunction()"></div>
+					<!---->
+					<!--Q16-->
+					<div class="card mt-5 mb-7" id="16">
+						<div class="card-body mb-8 mt-8">
+							<div class="container16">
+								<div class="q16o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q16" id="16">
+												<label for="q16">
+													<div class="spam">If you have a brainwashing machine, who would you use it on?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q16" placeholder="In our class" name="q16" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q17-->
+					<div class="card mt-5 mb-7" id="17">
+						<div class="card-body mb-8 mt-8">
+							<div class="container17">
+								<div class="q17o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q17">
+												<label for="q17">
+													<div class="spam">What is your deepest fear?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q17" placeholder="What is your deepest fear?" name="q17" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q18-->
+					<div class="card mt-5 mb-7" id="18">
+						<div class="card-body mb-8 mt-8">
+							<div class="container18">
+								<div class="q18o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q18">
+												<label for="q17" class="mt-3">
+													<center>
+														<div class="spam">Favourite colour</div>
+													</center>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control mt-3" id="q18" placeholder="Choose it" name="q18" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+						<div id="parallaxContainer1" data-image="Group.jpeg"> </div>
+					</div>
+					<!---->
+					<!--Q19-->
+					<div class="card mt-5 mb-7" id="19">
+						<div class="card-body mb-8 mt-8">
+							<div class="container19">
+								<div class="q19o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q19">
+												<label for="q19" class="q19i">
+													<div class="spam">Describe your most memorable experience in school</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q19" placeholder="No Limits! Express It" name="q19" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q20-->
+					<div class="card mt-5 mb-7" id="20">
+						<div class="card-body mb-8 mt-8">
+							<div class="container20">
+								<div class="q20o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q20">
+												<label for="q20">
+													<div class="spam">What is your strangest talent?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q20" placeholder="Only Yours!!!" name="q20" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q21-->
+					<div class="card mt-5 mb-7" id="21">
+						<div class="card-body mb-8 mt-8">
+							<div class="container21">
+								<div class="q21o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q21">
+												<label for="q21">
+													<div class="spam">To you, what is the meaning of life</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q21" placeholder="" name="q21" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q22-->
+					<div class="card mt-5 mb-7" id="22">
+						<div class="card-body mb-8 mt-8">
+							<div class="container22">
+								<div class="q22o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q22">
+												<label for="q22">
+													<center>
+														<div class="spam">Favourite Food</div>
+													</center>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q22" placeholder="Favourite Food" name="q22" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!--Q23-->
+					<div class="card mt-5 mb-7" id="23">
+						<div class="card-body mb-8 mt-8">
+							<div class="container23">
+								<div class="q23o">
+									<div class="form-group">
+										<div class="text">
+											<div class="q23">
+												<label for="q23">
+													<div class="spam">If you are invisible, tell what first things u do?</div>
+												</label>
+											</div>
+										</div>
+										<input type="text" class="form-control" id="q23" placeholder="If you are invisible, tell what first thi..." name="q23" required> </div>
+								</div>
+								<div class="card-body mt-3"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<div class="card mt-5 mb-7" id="24">
+					<div class="card-body mb-8 mt-8">
+						<div class="container24">
+							<div class="text">
+								<div class="thankyou ">
+									<label class="mt-3 ml-2">
+										<div class="spam">Thank you for Filling the form. Click The below button to Submit it finally</div>
+									</label>
+								</div>
+							</div>
+							<button class="submit mt-9" value="submit" type="submit">Submit</button>
+							<div class="card-body mt-2"> </div>
+						</div>
+					</div>
+				</div>
+			</center>
+		</form>
+		<script>
+			// When the user scrolls the page, execute myFunction 
+			window.onscroll = function () {
+				myFunction()
+			};
+
+			function myFunction() {
+				var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				var scrolled = (winScroll / height) * 100;
+				document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
+		<script>
+			$(document).ready(function () {
+				$("#parallaxContainer").mkParallax();
+				$("#parallaxContainer1").mkParallax();
+			});
+		</script>
+	</div>
+</body>
+
+</html>
