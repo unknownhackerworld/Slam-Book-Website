@@ -25,6 +25,16 @@ DM me on [Instagram](www.instagram.com/tamizhan.ml) for anything!!!
 <!--Ends Here-->
 ```
 
-```html
-About My Website
-```
+# About My Slambook
+
+####  **This project includes html, css and php file. You can directly clone or download the file.**
+
+#### **You can change the questions as your wish**
+
+#### **There will be 23 questions in default**
+#### **This website is Completely Responsive and can be used with all type of devices.**
+#### **This website contains parallax.css  where  it contains an attractive parallax background for the website.**
+
+#### **Hope you would like the website.**
+#### **Demo link - [SLAM BOOK](www.2020slambook.epizy.com)**
+
