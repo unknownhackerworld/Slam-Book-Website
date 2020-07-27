@@ -29,10 +29,10 @@ if ((!empty($q1) || !empty($q2) || !empty($q3) || !empty($q4) || !empty($q5) || 
   || !empty($q21) || !empty($q22) || !empty($q23) )) {
 	
         
-           $host = "fdb25.awardspace.net";
-       	   $dbUsername = "3447482_slambook";
-       	   $dbPassword = "Trylermeansallen1!";
-       	   $dbName = "3447482_slambook";
+           $host = "localhost";
+       	   $dbUsername = "";
+       	   $dbPassword = "";
+       	   $dbName = "";
 
        	   $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
